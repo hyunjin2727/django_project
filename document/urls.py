@@ -7,3 +7,6 @@ urlpatterns = [
     path('word/', include('word_count.urls')),
     path('char/', include('char_count.urls')),
 ]
+
+
+##수정 중.... 이거 적용되려나???
