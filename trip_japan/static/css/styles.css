@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#todo-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#todo-form input {
+    width: 300px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#todo-form button {
+    padding: 6px 10px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+#todo-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.todo-title.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.delete-btn {
+    margin-left: auto;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
