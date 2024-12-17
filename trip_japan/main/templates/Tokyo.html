@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도쿄</title>
+
+    <style>
+        /* 전체 페이지 스타일 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* ul 스타일: 그리드 레이아웃 */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5개의 항목이 한 줄에 배치 */
+            gap: 20px; /* 항목 사이의 간격 */
+            justify-items: center; /* 항목을 중앙 정렬 */
+            max-width: 1200px;
+            margin: 0 auto; /* 가운데 정렬 */
+        }
+
+        /* 각 항목의 스타일 */
+        li {
+            display: flex;
+            flex-direction: column; /* 글씨 밑에 사진 */
+            align-items: center;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 250px; /* 항목 크기 설정 */
+            margin: 0; /* 마진을 제거하여 그리드에 맞추기 */
+        }
+
+        /* 이미지 스타일 */
+        li img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* 텍스트 스타일 */
+        .place {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* 마우스 오버 효과 */
+        li:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+
+        /* 전체 화면에서 정렬 및 중앙 배치 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <ul>
+        <li>
+            <div class="place">1. 아키하바라 전자상가</div>
+            <img src="{% static 'images/tokyo/akihabara.jpg' %}" alt="아키하바라 전자상가">
+        </li>
+        <li>
+            <div class="place">2. 아사쿠사 센소지</div>
+            <img src="{% static 'images/tokyo/asakusa.jpg' %}" alt="아사쿠사 센소지">
+        </li>
+        <li>
+            <div class="place">3. 긴자 쇼핑 거리</div>
+            <img src="{% static 'images/tokyo/ginza.jpg' %}" alt="긴자 쇼핑 거리">
+        </li>
+        <li>
+            <div class="place">4. 메이지 신궁</div>
+            <img src="{% static 'images/tokyo/meiji_shrine.jpg' %}" alt="메이지 신궁">
+        </li>
+        <li>
+            <div class="place">5. 롯폰기 힐즈</div>
+            <img src="{% static 'images/tokyo/roppongi_hills.jpg' %}" alt="롯폰기 힐즈">
+        </li>
+        <li>
+            <div class="place">6. 시부야 스크램블 교차로</div>
+            <img src="{% static 'images/tokyo/shibuya.jpg' %}" alt="시부야 스크램블 교차로">
+        </li>
+        <li>
+            <div class="place">7. 도쿄 디즈니랜드</div>
+            <img src="{% static 'images/tokyo/tokyo_disneyland.jpg' %}" alt="도쿄 디즈니랜드">
+        </li>
+        <li>
+            <div class="place">8. 도쿄 스카이트리</div>
+            <img src="{% static 'images/tokyo/tokyo_skytree.jpg' %}" alt="도쿄 스카이트리">
+        </li>
+        <li>
+            <div class="place">9. 도쿄 타워</div>
+            <img src="{% static 'images/tokyo/tokyo_tower.jpg' %}" alt="도쿄 타워">
+        </li>
+        <li>
+            <div class="place">10. 우에노 동물원</div>
+            <img src="{% static 'images/tokyo/ueno_zoo.jpg' %}" alt="우에노 동물원">
+        </li>
+    </ul>
+</body>
+
+</html>
